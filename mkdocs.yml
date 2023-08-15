@@ -6,16 +6,17 @@ hide:
 # search:
 #   boost: 2
 
-site_name: My Docs
-# site_url: https://example.com/
+site_name: Natsのメモ書き
+site_url: https://nats72.github.io/mypage/
 nav:
   - トップページ: index.md
-  - 構築&編集:
-    - mkdocs.md
   - HTML&CSS:
-    - display: HTML_CSS/display.md
+    - 真ん中寄せ: ./html_css/center.md
+    - メディアクエリ: ./html_css/mediaquery.md
   - Git:
     - git.md
+  - mkdocs:
+    - mkdocs.md
     
 theme:
   name: material
@@ -52,6 +53,7 @@ theme:
     - search.suggest              # 検索候補の単語候補を検索窓に表示する
     - search.highlight            # 検索で辿った先の文字をハイライトする
     - search.share                # 検索窓に共有リンクボタンを表示
+    - content.tabs.link           # タブ機能の有効化
 
   plugins:
     - search:
@@ -64,3 +66,9 @@ extra_css:
 
 extra_javascript:
   - js/extra.js
+
+# タブ機能の有効化
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 

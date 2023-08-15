@@ -37,4 +37,5 @@ INFO    -  Writing initial docs: mydoc/docs/index.md
 ```
 
 ## GitHubPageで公開する
+公式ドキュメントに記載のとおり設定すればOK
 https://squidfunk.github.io/mkdocs-material/publishing-your-site/
