@@ -1,0 +1,66 @@
+hide:
+  - navigation
+  - toc
+  - path
+
+# search:
+#   boost: 2
+
+site_name: My Docs
+# site_url: https://example.com/
+nav:
+  - トップページ: index.md
+  - 構築&編集:
+    - mkdocs.md
+  - HTML&CSS:
+    - display: HTML_CSS/display.md
+  - Git:
+    - git.md
+    
+theme:
+  name: material
+  icon:
+    logo: material/cat
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+  language: ja
+  font:
+    code: Roboto
+  features:
+    - navigation.instant
+    # - navigation.tabs
+    # - navigation.tabs.sticky
+    # - navigation.sections
+    # - navigation.expand
+    - navigation.path
+    # - navigation.prune
+    # - navigation.indexes
+    # - toc.follow
+    - navigation.top
+    - search.suggest              # 検索候補の単語候補を検索窓に表示する
+    - search.highlight            # 検索で辿った先の文字をハイライトする
+    - search.share                # 検索窓に共有リンクボタンを表示
+
+  plugins:
+    - search:
+        lang: ja
+
+
+
+extra_css:
+  - css/extra.css
+
+extra_javascript:
+  - js/extra.js
