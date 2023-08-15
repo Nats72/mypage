@@ -32,5 +32,12 @@ drwxr-xr-x. 8 root root 163  8月 15 01:01 .git
 
 ```
 # mkdir -p .github/workflows
-# touch .github/workflows/ci.yml
+# touch .github/workflows/run.yml
+```
+
+## プッシュ
+```
+# git add .
+# git commit -m "first commit"
+# git push origin main
 ```
